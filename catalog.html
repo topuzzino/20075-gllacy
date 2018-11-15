@@ -2,9 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Глейси: магазин мороженого</title>
+    <title>Глейси: каталог мороженого</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
+
   <body>
     <header class="main-header">
       <a class="logo"><img src="#" width="154" height="64" alt="Логотип Глейси Шопа"></a>
@@ -38,23 +39,20 @@
     </header>
 
     <main>
-      <section class="announces">
-        <article class="announce-raspberry">
-          <h2>Малинка даром!</h2>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="button" href="">Хочу варенье!</a>
-        </article>
+      <ul class="breadcrubms">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a>Сливочное</a></li>
+      </ul>
 
-        <article class="announce-chocolate">
-          <h2>Шоколадки даром!</h2>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="button" href="">Хочу шоколадки!</a>
-        </article>
+      <section class="filters">
+        <h1>Сливочное мороженое</h1>
+        <form></form>
       </section>
 
-      <section class="offers">
-        <h2>Наши хиты мороженок</h2>
-        <ul class="offer-hits">
+      <section class="offers-catalog">
+        <h2>Каталог мороженок</h2>
+        <ul class="offers-list">
           <li class="offer-item">
             <img src="" width="267" height="267" alt="Сливочное морожение">
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -75,42 +73,61 @@
             <p>Сливочное крем-брюле с карамельной подливкой</p>
             <p>455<span>Р/кг</span></p>
           </li>
+
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочное морожение">
+            <p>Сливочное с брусничным джемом</p>
+            <p>325<span>Р/кг</span></p>
+          </li>
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочно-кофейное морожение">
+            <p>Сливочно-черничное с цельными ягодами черники</p>
+            <p>410<span>Р/кг</span></p>
+          </li>
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочно-клубничное морожение">
+            <p>Сливочно-лимонное с карамельной присыпкой</p>
+            <p>375<span>Р/кг</span></p>
+          </li>
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочное крем-брюле">
+            <p>Сливочное с шоколадной стружкой</p>
+            <p>320<span>Р/кг</span></p>
+          </li>
+
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочное морожение">
+            <p>Сливочно-ванильное с кусочками шоколада</p>
+            <p>440<span>Р/кг</span></p>
+          </li>
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочно-кофейное морожение">
+            <p>Сливочно с ментоловым сиропом</p>
+            <p>435<span>Р/кг</span></p>
+          </li>
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочно-клубничное морожение">
+            <p>Сливочное с кусочками черного шоколада</p>
+            <p>355<span>Р/кг</span></p>
+          </li>
+          <li class="offer-item">
+            <img src="" width="267" height="267" alt="Сливочное крем-брюле">
+            <p>Сливочное с мятным сиропом</p>
+            <p>420<span>Р/кг</span></p>
+          </li>
         </ul>
       </section>
 
-      <section class="features">
-        <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-        <ul class="features-list">
-          <li class="features-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
-          <li class="features-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
-          <li class="features-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
-          <li class="features-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+      <section class="pagination-wrapper">
+        <ul class="pagination">
+          <li class="pagination-item">❮</li>
+          <li class="pagination-item">1</li>
+          <li class="pagination-item">2</li>
+          <li class="pagination-item">3</li>
+          <li class="pagination-item">4</li>
+          <li class="pagination-item">5</li>
+          <li class="pagination-item">❯</li>
         </ul>
-      </section>
-
-      <div class="blog-newsletter">
-        <article>
-          <b>Новое в нашем блоге</b>
-          <h3></h3><a href="">10 способов сервировки фруктовых щербетов к столу</a></h3>
-        </article>
-
-        <section class="newsletter">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <form></form>
-        </section>
-      </div>
-
-      <section class="map">
-        <section class="adress">
-          <p>Адрес главного офиса <br>и офлайн-магазина:
-            <b>ул. Большая Конюшенная <br>19/8, Санкт-Петербург</b>
-          </p>
-          <p>Для заказов по телефону:
-            <a class="telephone" href="tel:+78124502525">8 812 450-25-25</a>
-            (с 10 до 20 ежедневно)
-          </p>
-          <a class="button" href="#">Форма обратной связи</a>
-        </section>
       </section>
     </main>
 
@@ -145,6 +162,5 @@
         <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </section>
     </footer>
-
   </body>
 </html>
