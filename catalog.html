@@ -41,7 +41,62 @@
 
       <section class="filters">
         <h1>Сливочное мороженое</h1>
-        <form></form>
+
+        <!-- Форма -->
+        <form>
+
+          <div class="form-first-row">
+            <fieldset>
+              <legend>Сортировка:</legend>
+              <select name="sorting">
+                <option>по популярности</option>
+                <option>по вкусу</option>
+                <option>по полезности</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Цена: 100 руб. – 500 руб.</legend>
+              <!-- hier wird ein Regler sein -->
+            </fieldset>
+
+            <fieldset>
+              <legend>Жирность</legend>
+              <input type="radio" name="" id="zero">
+              <label for="zero">"0%"</label>
+
+              <input type="radio" name="" id="ten">
+              <label for="ten">до 10%</label>
+
+              <input type="radio" name="" id="thirty">
+              <label for="thirty">до 30%</label>
+
+              <input type="radio" name="" id="from-thirty">
+              <label for="from-thirty">выше 30%</label>
+            </fieldset>
+          </div>
+
+          <div class="form-second-row">
+            <fieldset>
+              <legend>Наполнители:</legend>
+              <input type="checkbox" name="fills" id="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+
+              <input type="checkbox" name="fills" id="sugar-powder" checked>
+              <label for="sugar-powder">сахарные присыпки</label>
+
+              <input type="checkbox" name="fills" id="fruits">
+              <label for="fruits">фрукты</label>
+
+              <input type="checkbox" name="fills" id="sirup">
+              <label for="sirup">сиропы</label>
+
+              <input type="checkbox" name="fills" id="jam">
+              <label for="jam">джемы</label>
+            </fieldset>
+            <button class="filter-button" type="submit">Применить</button>
+          </div>
+        </form>
       </section>
 
       <section class="offers-catalog">
