@@ -43,11 +43,11 @@
         <h1>Сливочное мороженое</h1>
 
         <!-- Форма -->
-        <form>
+        <form action="" method="post">
 
           <div class="form-first-row">
             <fieldset>
-              <legend>Сортировка:</legend>
+              <legend class="form-head">Сортировка:</legend>
               <select name="sorting">
                 <option>по популярности</option>
                 <option>по вкусу</option>
@@ -56,16 +56,16 @@
             </fieldset>
 
             <fieldset>
-              <legend>Цена: 100 руб. – 500 руб.</legend>
+              <legend class="form-head">Цена: 100 руб. – 500 руб.</legend>
               <!-- hier wird ein Regler sein -->
             </fieldset>
 
             <fieldset>
-              <legend>Жирность</legend>
+              <legend class="form-head">Жирность</legend>
               <input type="radio" name="" id="zero">
               <label for="zero">"0%"</label>
 
-              <input type="radio" name="" id="ten">
+              <input type="radio" name="" id="ten" checked>
               <label for="ten">до 10%</label>
 
               <input type="radio" name="" id="thirty">
@@ -78,7 +78,7 @@
 
           <div class="form-second-row">
             <fieldset>
-              <legend>Наполнители:</legend>
+              <legend class="form-head">Наполнители:</legend>
               <input type="checkbox" name="fills" id="chocolate" checked>
               <label for="chocolate">шоколадные</label>
 

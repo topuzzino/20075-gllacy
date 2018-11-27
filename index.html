@@ -11,16 +11,49 @@
       <nav class="main-nav">
 
         <ul class="site-navigation">
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">О Компании</a></li>
+          <li class="site-subnavigation">
+            <a href="catalog.html">Каталог</a>
+            <ul class="site-subnavigation-list">
+              <li class="site-subnavigation-item"><a href="#"><b>Новинки</b></a></li>
+              <li class="site-subnavigation-item"><a href="#">Сливочное</a></li>
+              <li class="site-subnavigation-item"><a href="#">Щербеты</a></li>
+              <li class="site-subnavigation-item"><a href="#">Фруктовый лед</a></li>
+              <li class="site-subnavigation-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>
 
         <div class="client-navigation">
           <ul class="client-navigation-list">
-            <li><a class="search" href="">Поиск</a></li>
-            <li><a href="">Вход</a></li>
-            <li><a href="">Пусто</a></li>
+
+            <li>
+              <a class="header-search" href="#"><span class="visually-hidden">Поиск</span></a>
+              <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+                <input class="search-input-field" type="search" name="search" id="search-input" placeholder="Что ищем?">
+              </form>
+            </li>
+
+            <li>
+              <a class="header-login" href="#">Вход</a>
+              <form class="login-modal" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="email-imput">Электронная почта</label>
+                <input class="client-navigation-input" type="email" name="email" id="email-imput" placeholder="Электронная почта" required>
+                <label class="visually-hidden" for="password-input">Пароль</label>
+                <input class="client-navigation-input" type="password" name="password" id="password-input" placeholder="Пароль" required>
+                <button class="button-enter" type="submit">Войти</button>
+                <p class="client-navigation-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+            </li>
+
+            <li>
+              <a class="header-basket" href="#"><span class="header-basket-text">Пусто</span></a>
+            </li>
           </ul>
         </div>
 
@@ -136,7 +169,16 @@
             <a class="telephone" href="tel:+78124502525">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button-feedback" href="#">Форма обратной связи</a>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="feedback-form-title">Мы обязательно вам ответим!</p>
+            <label class="feedback-form-item" for="feedback-name">Имя</label>
+            <input class="feedback-form-input" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+            <label class="feedback-form-item visually-hidden" for="feedback-email">Емейл</label>
+            <input class="feedback-form-input" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+            <textarea class="feedback-form-input feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="button-feedback-submit" type=submit>Отправить</button>
+          </form>
         </section>
       </section>
     </main>
@@ -164,13 +206,13 @@
             <a href="">Наши документы</a>
             <a href="">Экологические стандарты</a>
           </div>
-        </div>>
+        </div>
       </section>
 
       <section class="copyright">
         <h2 class="visually-hidden">Копирайт</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img class="logo-academy" src="" width="108" height="40" alt="Лого HTML академии">
+          <img class="logo-academy" src="img/logo-htmlacademy.svg" width="108" height="40" alt="Лого HTML академии">
         </a>
         <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </section>
