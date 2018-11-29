@@ -77,15 +77,18 @@
         </div>
         <ul class="slider-list">
           <li class="slider-item">
-            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+            <h2>Крем-брюле и пломбир с малиновым джемом</h3>
+            <img src="img/intro-image01.png" width="1045" height="880" alt="Крем-брюле и пломбир с малиновым джемом">
             <a class="button slider-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item">
-            <h3>Шоколадный пломбир и лимонный сорбет</h3>
+            <h2>Шоколадный пломбир и лимонный сорбет</h3>
+            <img src="img/intro-image02.png" width="1045" height="880" alt="Шоколадный пломбир и лимонный сорбет">
             <a class="button slider-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item">
-            <h3>Пломбир с помадкой и клубничный щербет</h3>
+            <h2>Пломбир с помадкой и клубничный щербет</h3>
+            <img src="img/intro-image03.png" width="1045" height="880" alt="Пломбир с помадкой и клубничный щербет">
             <a class="button slider-button" href="#">Давайте оба!</a>
           </li>
         </ul>
@@ -160,6 +163,7 @@
       <section class="map">
         <h2 class="visually-hidden">Глейси на карте</h2>
         <!-- карта -->
+        <img src="img/map.jpg" width="1200" height="430" alt="Магазин Глейси на карте">
         <section class="adress">
           <h2>Адрес Глейси</h2>
           <p>Адрес главного офиса <br>и офлайн-магазина:
@@ -170,14 +174,17 @@
             (с 10 до 20 ежедневно)
           </p>
           <a class="button-feedback" href="#">Форма обратной связи</a>
+
+          <!-- Popup with feedback form -->
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="feedback-form-title">Мы обязательно вам ответим!</p>
+            <h2 class="feedback-form-title">Мы обязательно вам ответим!</h2>
             <label class="feedback-form-item" for="feedback-name">Имя</label>
-            <input class="feedback-form-input" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+            <input class="feedback-form-input" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
             <label class="feedback-form-item visually-hidden" for="feedback-email">Емейл</label>
-            <input class="feedback-form-input" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+            <input class="feedback-form-input" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
             <textarea class="feedback-form-input feedback-text" placeholder="Напишите что-нибудь..."></textarea>
             <button class="button-feedback-submit" type=submit>Отправить</button>
+            <button class="button-feedback-close" type="button">Закрыть</button>
           </form>
         </section>
       </section>
@@ -214,7 +221,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img class="logo-academy" src="img/logo-htmlacademy.svg" width="108" height="40" alt="Лого HTML академии">
         </a>
-        <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+        <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
       </section>
     </footer>
 
