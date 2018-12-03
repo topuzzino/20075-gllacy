@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси: каталог мороженого</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
@@ -125,8 +127,7 @@
 
             <fieldset class="filter-price">
               <legend class="form-head">Цена: 100 руб. – 500 руб.</legend>
-              <!-- hier wird ein Regler sein -->
-              <input type="range" name="regler">
+              <input type="range" name="regler" min="100" max="500">
             </fieldset>
 
             <fieldset class="filter-fat">
