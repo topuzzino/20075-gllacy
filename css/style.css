@@ -52,13 +52,20 @@ a {
   color: #ffffff;
 }
 
+.site-navigation-item-active .active {
+  background-color: #d07058;
+  padding: 8px 13px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
 /* Popup in header */
-.site-subnavi-list {
+.site-subnavigation-list {
   list-style: none;
   display: none;
 }
 
-.site-subnavi-list a {
+.site-subnavigation-list a {
   text-decoration: none;
   color: #000000;
 
@@ -92,7 +99,7 @@ a {
   font-weight: 700;
 }
 
-.telephone {
+.header-telephone {
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
@@ -118,6 +125,25 @@ a {
   border-radius: 30px;
 }
 
+
+/* ------- Breadcrumbs in catalog.html ------- */
+
+
+.breadcrubms {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrubms-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.breadcrubms-link.current {
+  text-decoration: none;
+}
 
 /* ------- Announces ------- */
 
@@ -170,8 +196,12 @@ a {
   justify-content: space-between;
 }
 
+/* ------- All pictures of ice ------- */
 .offer-item {
   width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .offers a {
@@ -263,7 +293,7 @@ a {
   border: 1px solid #d3d3d2;
 }
 
-.newsletter-form input[placeholder] {
+.newsletter-form input::placeholder {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -339,6 +369,103 @@ a {
 
 .feedback-form {
   display: none; /* временно скрою попап фидбека */
+}
+
+
+/* ------- filters of catalog.html ------- */
+
+
+.filters h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.form-first-row,
+.form-second-row {
+  display: flex;
+}
+
+.form-head {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.sorting-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.fat-number {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.topping-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #a6b7ae;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 7px 28px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* ------- offers-catalog of catalog.html ------- */
+
+
+.offers-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1146px; /* временная ширина, она потом будет контейнером задаваться для всех элементов */
+  justify-content: space-between;
+}
+
+/* ------- Pagination of catalog.html ------- */
+
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-item {
+
+  text-align: center;
+
+}
+
+.pagination-item a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 27px;
+  height: 26px;
+  background-color: #849d8f;
+  border-radius: 50%;
+}
+
+.pagination-item a:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /* ------- Footer ------- */
