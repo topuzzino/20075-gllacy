@@ -8,63 +8,68 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси Шопа"></a>
+    <div class="container">
+      <header class="main-header">
+        <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси Шопа"></a>
 
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
-            <a href="catalog.html">Каталог</a>
-            <ul class="site-subnavi-list">
-              <li class="site-subnavi-item"><a href="#"><b>Новинки</b></a></li>
-              <li class="site-subnavi-item"><a href="#">Сливочное</a></li>
-              <li class="site-subnavi-item"><a href="#">Щербеты</a></li>
-              <li class="site-subnavi-item"><a href="#">Фруктовый лед</a></li>
-              <li class="site-subnavi-item"><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="#">О Компании</a></li>
-        </ul>
-
-        <div class="client-navigation">
-          <ul class="client-navigation-list">
-
-            <li class="client-navigation-item">
-              <a class="header-search" href="#"><span class="visually-hidden">Поиск</span></a>
-              <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-                <input class="search-input-field" type="search" name="search" id="search-input" placeholder="Что ищем?">
-              </form>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a href="catalog.html">Каталог</a>
+              <ul class="site-subnavi-list">
+                <li class="site-subnavi-item"><a href="#"><b>Новинки</b></a></li>
+                <li class="site-subnavi-item"><a href="#">Сливочное</a></li>
+                <li class="site-subnavi-item"><a href="#">Щербеты</a></li>
+                <li class="site-subnavi-item"><a href="#">Фруктовый лед</a></li>
+                <li class="site-subnavi-item"><a href="#">Мелорин</a></li>
+              </ul>
             </li>
-
-            <li class="client-navigation-item">
-              <a class="header-login" href="#">Вход</a>
-              <form class="login-modal" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="email-imput">Электронная почта</label>
-                <input class="client-navigation-input" type="email" name="email" id="email-imput" placeholder="Электронная почта" required>
-                <label class="visually-hidden" for="password-input">Пароль</label>
-                <input class="client-navigation-input" type="password" name="password" id="password-input" placeholder="Пароль" required>
-                <button class="button-enter" type="submit">Войти</button>
-                <p class="client-navigation-links">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </p>
-              </form>
-            </li>
-
-            <li class="client-navigation-item">
-              <a class="header-basket" href="#"><span class="header-basket-text">Пусто</span></a>
-            </li>
+            <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a href="#">О Компании</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="header-info">
-          <p class="opening-hours">С 10 до 20, ежедневно</p>
-          <p class="header-telephone" href="tel:+78124502525">8 812 450-25-25</p>
+        <div class="client-navigation-wrapper">
+          <div class="client-navigation">
+            <ul class="client-navigation-list">
+
+              <li class="client-navigation-item">
+                <a class="header-search" href="#"><span class="visually-hidden">Поиск</span></a>
+                <form class="search-modal" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+                  <input class="search-input-field" type="search" name="search" id="search-input" placeholder="Что ищем?">
+                </form>
+              </li>
+
+              <li class="client-navigation-item">
+                <a class="header-login" href="#">Вход</a>
+                <form class="login-modal" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="email-imput">Электронная почта</label>
+                  <input class="client-navigation-input" type="email" name="email" id="email-imput" placeholder="Электронная почта" required>
+                  <label class="visually-hidden" for="password-input">Пароль</label>
+                  <input class="client-navigation-input" type="password" name="password" id="password-input" placeholder="Пароль" required>
+                  <button class="button-enter" type="submit">Войти</button>
+                  <p class="client-navigation-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </form>
+              </li>
+
+              <li class="client-navigation-item">
+                <a class="header-basket" href="#"><span class="header-basket-text">Пусто</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-info">
+            <p class="opening-hours">С 10 до 20, ежедневно</p>
+            <p class="header-telephone" href="tel:+78124502525">8 812 450-25-25</p>
+          </div>
         </div>
-      </nav>
-    </header>
+      </header>
+    </div>
+
 
     <main>
       <section class="intro-slider">
@@ -115,22 +120,30 @@
         <h2 class="visually-hidden">Наши хиты</h2>
         <ul class="offer-hits">
           <li class="offer-item">
-            <img src="img/ice01.jpg" width="267" height="267" alt="Сливочное морожение">
+            <div class="offer-image-wrapper">
+              <img src="img/ice01.jpg" width="267" height="267" alt="Сливочное морожение">
+            </div>
             <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p class="offer-price">310&#x20bd<span>/кг</span></p>
           </li>
           <li class="offer-item">
-            <img src="img/ice02.jpg" width="267" height="267" alt="Сливочно-кофейное морожение">
+            <div class="offer-image-wrapper">
+              <img src="img/ice02.jpg" width="267" height="267" alt="Сливочно-кофейное морожение">
+            </div>
             <a>Сливочно-кофейное с кусочками шоколада</a>
             <p class="offer-price">380&#x20bd<span>/кг</span></p>
           </li>
           <li class="offer-item">
-            <img src="img/ice03.jpg" width="267" height="267" alt="Сливочно-клубничное морожение">
+            <div class="offer-image-wrapper">
+              <img src="img/ice03.jpg" width="267" height="267" alt="Сливочно-клубничное морожение">
+            </div>
             <a>Сливочно-клубничное с присыпкой из белого шоколада</a>
             <p class="offer-price">355 &#x20bd<span>/кг</span></p>
           </li>
           <li class="offer-item">
-            <img src="img/ice04.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+            <div class="offer-image-wrapper">
+              <img src="img/ice04.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+            </div>
             <a>Сливочное крем-брюле с карамельной подливкой</a>
             <p class="offer-price">455&#x20bd<span>/кг</span></p>
           </li>

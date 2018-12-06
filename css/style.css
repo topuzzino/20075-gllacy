@@ -29,27 +29,78 @@ a {
   color: #ffffff;
   text-decoration: none;
   background-color: #ec583c;
+  background-image: linear-gradient(#f47c5c, #e34e3a);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.6);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ef7761;
+  background-image: none;
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background-image: linear-gradient(#f26843, #e74a35);
+  box-shadow: inset 0 2px 2px 0 #942718;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
 }
 
 
 /* ------- Header ------- */
 
+.main-header {
+  margin-bottom: 270px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.main-header-logo {
+  /* display: block;  чтоб картинка среагировала на размеры, тк она ссылка */
+  width: 154px;
+  height: 64px;
+  margin-right: 23px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  display: flex;
 }
 
 /* Both right & left lists of navigation  */
 .site-navigation,
 .client-navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+}
+
+.site-navigation {
+  width: 676px;
+  padding-top: 20px;
 }
 
 .site-navigation a,
 .client-navigation-list a {
   color: #ffffff;
+}
+
+.site-navigation-item {
+  margin-right: 30px;
+}
+
+.site-navigation-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .site-navigation-item-active .active {
@@ -60,12 +111,14 @@ a {
 }
 
 /* Popup in header */
-.site-subnavigation-list {
+.site-subnavi-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: none;
 }
 
-.site-subnavigation-list a {
+.site-subnavi-list a {
   text-decoration: none;
   color: #000000;
 
@@ -74,6 +127,16 @@ a {
 }
 
 /* Navigation on the right */
+.client-navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-navigation {
+  margin-bottom: 18px;
+  padding-top: 12px;
+}
+
 .client-navigation-list {
   font-size: 14px;
   line-height: 16px;
@@ -85,24 +148,68 @@ a {
   text-decoration: none
 }
 
-.header-login,
-.header-basket {
+.header-search {
+  width: 32px;
+  height: 32px;
   background-color: #a1b6ab;
+  display: block;
   border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header-login {
+  width: 92px;
+  height: 32px;
+  background-color: #a1b6ab;
+  display: block;
+  border-radius: 20px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+}
+
+.search-modal {
+  display: none;
+}
+
+.login-modal {
+  display: none;
+}
+
+.header-basket {
+  width: 100px;
+  height: 32px;
+  background-color: #a1b6ab;
+  display: block;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
 }
 
 /* Header: open hours & phone */
+.header-info {
+  text-align: right;
+}
+
 .opening-hours {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+
+  display: block;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .header-telephone {
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
+  display: block;
+  margin: 0;
 }
 
 
@@ -116,6 +223,8 @@ a {
 
 .slider-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-button {
@@ -131,6 +240,8 @@ a {
 
 .breadcrubms {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
@@ -191,6 +302,8 @@ a {
 
 .offer-hits {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   width: 1146px; /* временная ширина, она потом будет контейнером задаваться для всех элементов */
   justify-content: space-between;
@@ -198,6 +311,16 @@ a {
 
 /* ------- All pictures of ice ------- */
 .offer-item {
+  width: 267px;
+  background-color: #849d8f;
+}
+
+.offer-item:hover {
+  background-color: #9bafa3;
+  /*box-shadow: rgba(0, 0, 0, 0.4); */
+}
+
+.offer-image-wrapper {
   width: 267px;
   height: 267px;
   border-radius: 50%;
@@ -245,6 +368,8 @@ a {
 
 .features-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -381,6 +506,10 @@ a {
   font-weight: 700;
 }
 
+.filters fieldset {
+  border: none;
+}
+
 .form-first-row,
 .form-second-row {
   display: flex;
@@ -432,6 +561,8 @@ a {
 
 .offers-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   width: 1146px; /* временная ширина, она потом будет контейнером задаваться для всех элементов */
@@ -443,6 +574,8 @@ a {
 
 .pagination-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
 }
 
@@ -456,6 +589,9 @@ a {
   display: block;
   color: #ffffff;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;      /* for "vertical-align" functioning properly */
   vertical-align: middle;
   width: 27px;
   height: 26px;
@@ -464,8 +600,16 @@ a {
 }
 
 .pagination-item a:hover {
+  background-color: #9db1a5;
+}
+
+.pagination-item .current {
   color: #000000;
   background-color: #ffffff;
+}
+
+.pagination-item .disabled {
+  color: #9db1a5;
 }
 
 /* ------- Footer ------- */
@@ -473,6 +617,8 @@ a {
 
 .social-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
 }
 
