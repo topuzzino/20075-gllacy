@@ -46,15 +46,26 @@ a {
 }
 
 .container {
-  width: 1146px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 
 /* ------- Header ------- */
 
+.main-header-wrapper {
+  width: 1146px;
+  margin: 0 auto;
+}
+
 .main-header {
   margin-bottom: 270px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.inner-header {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -188,6 +199,16 @@ a {
   line-height: 32px;
 }
 
+.header-basket.basket-full {
+  background-color: #f7f6f3;
+  color: #000000;
+}
+
+/* Full basket catalog.html */
+.basket-container-full {
+  display: none;
+}
+
 /* Header: open hours & phone */
 .header-info {
   text-align: right;
@@ -216,9 +237,16 @@ a {
 /* ------- Intro-slider ------- */
 
 
+.intro-slider {
+  margin-bottom: 38px;
+}
+
 .intro-slider h2 {
   font-size: 60px;
   line-height: 60px;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .slider-list {
@@ -227,22 +255,41 @@ a {
   margin: 0;
 }
 
+.slider-item:nth-child(2),
+.slider-item:last-child {
+  display: none;
+}
+
 .slider-button {
   font-size: 32px;
   line-height: 44px;
-  padding: 13px 40px;
+  padding: 10px 40px;
   border-radius: 30px;
+  vertical-align: middle;
+
+  display: block;
+  width: 280px;
+  height: 63px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 
 /* ------- Breadcrumbs in catalog.html ------- */
 
 
+.inner-main {
+  width: 1146px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
 .breadcrubms {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  margin-bottom: 6px;
 }
 
 .breadcrubms-link {
@@ -250,6 +297,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  margin-right: 22px;
 }
 
 .breadcrubms-link.current {
@@ -261,51 +309,73 @@ a {
 
 .announces {
   display: flex;
+  justify-content: space-between;
+  width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.announce-raspberry,
+.announce-chocolate {
+  box-sizing: border-box;
+  width: 560px;
+  min-height: 230px;
+  border-radius: 20px;
+  padding: 18px;
 }
 
 .announce-raspberry {
-  width: 560px;
-  min-height: 230px;
   background-color: #c1002f;
   background: url("../img/bg-raspberry.jpg") no-repeat;
-  border-radius: 20px;
 }
 
 .announce-chocolate {
-  width: 560px;
-  min-height: 230px;
+
   background-color: #71452a;
   background: url("../img/bg-chocolate.jpg") no-repeat;
-  border-radius: 20px;
 }
 
 .announces h3 {
   font-size: 35px;
   line-height: 41px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .announces p {
   font-size: 18px;
   line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 43px;
 }
 
 .announces-button {
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 24px;
-  padding: 13px 22px;
+  text-align: center;
+  padding: 8px 21px 12px 22px;
   border-radius: 30px;
+
+  height: 46px;
 }
 
 
 /* ------- Offers ------- */
 
 
+.offers {
+  width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
 .offer-hits {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  width: 1146px; /* временная ширина, она потом будет контейнером задаваться для всех элементов */
   justify-content: space-between;
 }
 
@@ -313,6 +383,8 @@ a {
 .offer-item {
   width: 267px;
   background-color: #849d8f;
+  position: relative;
+  padding-bottom: 35px;
 }
 
 .offer-item:hover {
@@ -325,6 +397,15 @@ a {
   height: 267px;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.offer-titel {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
 .offers a {
@@ -337,6 +418,12 @@ a {
 .offer-price {
   font-size: 45px;
   line-height: 45px;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
 }
 
 .offer-price span {
@@ -348,8 +435,14 @@ a {
 
 
 .features {
+  box-sizing: border-box;
   background-image: url("../img/waffel.jpg");
   background-color: #efe3cb;
+  border-radius: 20px;
+  width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 18px;
 }
 
 .features h3 {
@@ -357,6 +450,8 @@ a {
   line-height: 30px;
   font-weight: 500;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .features p {
@@ -378,13 +473,30 @@ a {
 
 .blog-newsletter {
   display: flex;
+  width: 1146px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.blog-news,
+.newsletter {
+  width: 560px;
+  min-height: 220px;
+  border-radius: 10px;
 }
 
 .blog-news {
+  box-sizing: border-box;
   background-color: #ffffff;
-  background-image: url("../img/bg-strawberry.jpg");
-  width: 560px;
-  min-height: 220px;
+  background: url("../img/bg-strawberry.jpg") no-repeat;
+  background-position: right;
+  padding-top: 25px;
+  padding-left: 18px;
+}
+
+.blog-news h3 {
+  width: 288px;
 }
 
 .blog-newsletter h3 a {
@@ -401,9 +513,18 @@ a {
 }
 
 .newsletter {
+  box-sizing: border-box;
   background-color: #f8f7f4;
-  width: 560px;
-  min-height: 220px;
+  background-image: url("../img/bg-post.svg");
+  padding: 5px;
+  height: auto;
+}
+
+.newsletter-wrapper {
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  padding-top: 32px;
+  padding: 32px 20px;
 }
 
 .newsletter p {
@@ -411,6 +532,8 @@ a {
   line-height: 22px;
   font-weight: 400;
   color: #000000;
+  margin: 0;
+  margin-bottom: 36px;
 }
 
 .newsletter-form input {
@@ -445,6 +568,7 @@ a {
 .map-image {
   width: 100%;
   height: 430px;
+  display: block;
   overflow: hidden;
 }
 
@@ -453,16 +577,25 @@ a {
   color: #000000;
   width: 303px;
   height: 306px;
+  border-radius: 10px;
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 60px;
+  right: 27px;
+
+  box-sizing: border-box;
+  padding-top: 32px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
 }
 
 .address-map {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 23px;
 }
 
 .telephone {
@@ -488,8 +621,12 @@ a {
 }
 
 .button-feedback {
+  box-sizing: border-box;
   padding: 11px 28px;
   border-radius: 30px;
+  display: block;
+  width: 252px;
+  height: 44px;
 }
 
 .feedback-form {
@@ -500,14 +637,23 @@ a {
 /* ------- filters of catalog.html ------- */
 
 
+.filters {
+  margin-bottom: 40px;
+}
+
 .filters h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .filters fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
 }
 
 .form-first-row,
@@ -559,6 +705,11 @@ a {
 /* ------- offers-catalog of catalog.html ------- */
 
 
+.offers-catalog {
+  margin-bottom: 14px;
+}
+
+
 .offers-list {
   list-style: none;
   padding: 0;
@@ -572,11 +723,17 @@ a {
 /* ------- Pagination of catalog.html ------- */
 
 
+.pagination {
+  padding: 30px 0;
+  border-bottom: 1px solid #a1b6ab;
+}
+
 .pagination-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .pagination-item {
@@ -615,16 +772,32 @@ a {
 /* ------- Footer ------- */
 
 
+.main-footer {
+  padding-top: 18px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.footer-social {
+  margin-top: 18px;
+}
+
 .social-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  width: 186px;
+  justify-content: space-between;
 }
 
 .social-item {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   background-color: #e6ebe9;
   border: 3px solid #c2cec7;
   border-radius: 50%;
@@ -634,20 +807,53 @@ a {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 18px;
 }
 
 .impressum a {
   color: #ffffff;
 }
 
+.impressum-docs {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+}
+
+.docs-left-column {
+  margin-right: 30px;
+}
+
+.docs-left-column a,
+.docs-right-column a {
+  display: block;
+}
+
+.docs-left-column a:hover,
+.docs-left-column a:focus,
+.docs-left-column a:active,
+.docs-right-column a:hover,
+.docs-right-column a:focus,
+.docs-right-column a:active {
+  color: #ffbc9e;
+}
+
 .docs-left-column a:first-child {
   font-weight: 700;
+}
+
+.logo-academy-link {
+  display: block;
+  width: 108px;
+  height: 40px;
+  margin-bottom: 7px;
 }
 
 .copyright-text {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin: 0;
 }
 
 .copyright-text a {
