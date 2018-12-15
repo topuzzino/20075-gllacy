@@ -18,7 +18,7 @@
               <li class="site-navigation-item">
                 <a href="catalog.html">Каталог</a>
                 <ul class="site-subnavi-list">
-                  <li class="site-subnavi-item"><a href="#"><b>Новинки</b></a></li>
+                  <li class="site-subnavi-item site-subnavi-item-new"><a href="#"><b>Новинки</b></a></li>
                   <li class="site-subnavi-item"><a href="#">Сливочное</a></li>
                   <li class="site-subnavi-item"><a href="#">Щербеты</a></li>
                   <li class="site-subnavi-item"><a href="#">Фруктовый лед</a></li>
@@ -162,10 +162,14 @@
           <h2 class="visually-hidden">Кто мы</h2>
           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
           <ul class="features-list">
-            <li class="features-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
-            <li class="features-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
-            <li class="features-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
-            <li class="features-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+            <div class="features-left-column">
+              <li class="features-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
+              <li class="features-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
+            </div>
+            <div class="features-right-column">
+              <li class="features-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
+              <li class="features-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+            </div>
           </ul>
         </section>
 
@@ -205,12 +209,12 @@
             <!-- Popup with feedback form -->
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
               <h2 class="feedback-form-title">Мы обязательно вам ответим!</h2>
-              <label class="feedback-form-item" for="feedback-name">Имя</label>
+              <label class="feedback-form-item visually-hidden" for="feedback-name">Имя</label>
               <input class="feedback-form-input" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
               <label class="feedback-form-item visually-hidden" for="feedback-email">Емейл</label>
               <input class="feedback-form-input" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
-              <textarea class="feedback-form-input feedback-text" placeholder="Напишите что-нибудь..."></textarea>
-              <button class="button-feedback-submit" type=submit>Отправить</button>
+              <textarea class="feedback-form-input feedback-text" placeholder="Напишите что-нибудь..." rows="7"></textarea>
+              <button class="button button-feedback-submit" type=submit>Отправить</button>
               <button class="button-feedback-close" type="button">Закрыть</button>
             </form>
           </section>
@@ -222,10 +226,10 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Глейси в социальных сетях</h2>
           <ul class="social-list">
-            <li class="social-item twitter"><a href="#"><span class="visually-hidden">Твитер</span></a></li>
-            <li class="social-item instagram"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li class="social-item facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="social-item vkontakte"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="social-item twitter"><a href="https://twitter.com/htmlacademy_ru" target="_blank"><span class="visually-hidden">Твитер</span></a></li>
+            <li class="social-item instagram"><a href="https://www.instagram.com/htmlacademy/" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li class="social-item facebook"><a href="https://www.facebook.com/htmlacademy/" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="social-item vkontakte"><a href="https://vk.com/htmlacademy" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
           </ul>
         </section>
 
