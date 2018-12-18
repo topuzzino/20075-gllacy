@@ -8,8 +8,6 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: none;
-
-  background-color: #849d8f;
 }
 
 .visually-hidden {
@@ -27,11 +25,15 @@ a {
 
 .button {
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.7);
   background-color: #ec583c;
   background-image: linear-gradient(#f47c5c, #e34e3a);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.6);
   border-radius: 30px;
+
+  cursor: pointer;
 }
 
 .button:hover,
@@ -43,7 +45,18 @@ a {
 
 .button:active {
   background-image: linear-gradient(#f26843, #e74a35);
-  box-shadow: inset 0 2px 2px 0 #942718;
+  box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 1);
+}
+
+.site-wrapper {
+  min-width: 1200px;
+  margin: 0 auto;
+  background-color: #849d8f;
+  background-image: url("../img/intro-image01.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .container {
@@ -60,7 +73,6 @@ a {
 }
 
 .main-header {
-  margin-bottom: 270px;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -594,7 +606,10 @@ a {
 
 
 .intro-slider {
+  padding-top: 321px;
+  text-align: center;
   margin-bottom: 38px;
+  position: relative;
 }
 
 .intro-slider h2 {
@@ -605,14 +620,36 @@ a {
   margin-bottom: 24px;
 }
 
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .slider-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.slider-item:nth-child(2),
-.slider-item:last-child {
+/* all slides disappiar */
+.slide {
   display: none;
 }
 
@@ -629,6 +666,32 @@ a {
   margin: 0 auto;
 }
 
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/intro-image01.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/intro-image02.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/intro-image03.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
 
 /* ------- Breadcrumbs in catalog.html ------- */
 
@@ -1078,7 +1141,7 @@ a {
 }
 
 .feedback-form {
-  display: flex; /* временно скрою попап фидбека */
+  display: none; /* временно скрою попап фидбека */
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
@@ -1144,7 +1207,6 @@ a {
   font-size: 0;
   background-color: transparent;
   border: 0;
-  cursor: pointer;
 }
 
 .button-feedback-close::before,
