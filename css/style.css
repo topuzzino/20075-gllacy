@@ -65,6 +65,15 @@ a {
 }
 
 
+/* ------- wrapper for catalog.html ------- */
+
+.catalog-wrapper {
+  min-width: 1200px;
+  margin: 0 auto;
+  background-color: #849d8f;
+}
+
+
 /* ------- Header ------- */
 
 .main-header-wrapper {
@@ -178,6 +187,7 @@ a {
 
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
   display: block;
   padding: 11px 20px 12px 20px;
 }
@@ -843,6 +853,8 @@ a {
 .offer-item:hover {
   background-color: #9bafa3;
   /*box-shadow: rgba(0, 0, 0, 0.4); */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .offer-image-wrapper {
@@ -1241,7 +1253,7 @@ a {
   line-height: 41px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .filters fieldset {
@@ -1254,12 +1266,54 @@ a {
 .form-first-row,
 .form-second-row {
   display: flex;
+  margin-bottom: 16px;
+}
+
+.form-second-row {
+  align-items: flex-end;
 }
 
 .form-head {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  padding-left: 16px;
+  margin-bottom: 7px;
+}
+
+/* Filter "Сортировка" */
+
+.form-sorting-wrapper {
+  box-sizing: border-box;
+  width: 193px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.form-sorting {
+  box-sizing: border-box;
+  min-width: 193px;
+  min-height: 36px;
+  padding: 0 16px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  background-image: url("../img/icon-down-dir.svg");
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 165px center;
+  background-size: 20px 11px;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+.form-sorting:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  background-image: url("../img/icon-down-dir-black.svg");
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .sorting-item {
@@ -1268,32 +1322,198 @@ a {
   font-weight: 500;
 }
 
-.fat-number {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+/* Filter "Цена" */
+
+.form-price-wrapper {
+  box-sizing: border-box;
+  width: 220px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding-top: 16px;
 }
 
-.topping-item {
+.range-controls {
+  width: 176px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scale {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.bar {
+  width: 98px;
+  height: 4px;
+  background-color: #f8f7f4;
+  position: absolute;
+  left: 23px;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  position: absolute;
+  top: -8px;
+  cursor: pointer;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  border: 9px solid #ffffff;
+}
+
+.range-toggle-min {
+  left: 13px;
+}
+
+.range-toggle-max {
+  right: 45px;
+}
+
+/* Filter "Жирность" */
+
+.filter-fat-wrapper {
+  box-sizing: border-box;
+  width: 415px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 7px 15px;
+  font-size: 0;
+}
+
+.filter-fat-wrapper label {
+  padding-left: 32px;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.filter-fat-wrapper label::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  left: 0;
+  top: -3px;
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter-fat-wrapper input[type="radio"]:checked + label::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-fat-wrapper label,
+.filter-topping-wrapper label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  opacity: 0.8;
 }
+
+.filter-fat-wrapper label:hover,
+.filter-fat-wrapper label:focus,
+.filter-topping-wrapper label:hover,
+.filter-topping-wrapper label:focus {
+  opacity: 1;
+}
+
+.filter-fat-wrapper label:disabled,
+.filter-topping-wrapper label:disabled {
+  opacity: 0.4;
+}
+
+/* Filter "Наполнители" */
+
+.filter-topping-wrapper {
+  box-sizing: border-box;
+  width: 702px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 7px 16px;
+}
+
+/* label для наполнителей */
+.filter-topping-wrapper label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-left: 32px;
+  position: relative;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.filter-topping-wrapper label:last-child {
+  margin-right: 0;
+}
+
+.filter-topping-wrapper input[type="checkbox"] + label::before {
+  position: absolute;
+  content: "";
+
+  top: -2px;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.filter-topping-wrapper input[type="checkbox"]:checked + label::before {
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+
+/* Filter button */
 
 .filter-button {
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+  width: 144px;
+  height: 36px;
   background-color: #a6b7ae;
+  border-radius: 30px;
   border: 2px solid #ffffff;
-  padding: 7px 28px;
+  padding: 7px 26px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: #000000;
   background-color: #ffffff;
+}
+
+.filter-button:active {
+  color: #000000;
+  background-color: #eaeaea;
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 /* ------- offers-catalog of catalog.html ------- */
