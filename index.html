@@ -132,29 +132,41 @@
                 <div class="offer-image-wrapper">
                   <img src="img/ice01.jpg" width="267" height="267" alt="Сливочное морожение">
                 </div>
-                <a class="offer-titel">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a class="offer-titel" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <p class="offer-price">310&#x20bd<span>/кг</span></p>
+                <div class="button-offer-wrapper">
+                  <button class="button button-offer">Быстрый просмотр</button>
+                </div>
               </li>
               <li class="offer-item">
                 <div class="offer-image-wrapper">
                   <img src="img/ice02.jpg" width="267" height="267" alt="Сливочно-кофейное морожение">
                 </div>
-                <a class="offer-titel">Сливочно-кофейное с кусочками шоколада</a>
+                <a class="offer-titel" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <p class="offer-price">380&#x20bd<span>/кг</span></p>
+                <div class="button-offer-wrapper">
+                  <button class="button button-offer">Быстрый просмотр</button>
+                </div>
               </li>
               <li class="offer-item">
                 <div class="offer-image-wrapper">
                   <img src="img/ice03.jpg" width="267" height="267" alt="Сливочно-клубничное морожение">
                 </div>
-                <a class="offer-titel">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                <a class="offer-titel" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <p class="offer-price">355 &#x20bd<span>/кг</span></p>
+                <div class="button-offer-wrapper">
+                  <button class="button button-offer">Быстрый просмотр</button>
+                </div>
               </li>
               <li class="offer-item">
                 <div class="offer-image-wrapper">
                   <img src="img/ice04.jpg" width="267" height="267" alt="Сливочное крем-брюле">
                 </div>
-                <a class="offer-titel">Сливочное крем-брюле с карамельной подливкой</a>
+                <a class="offer-titel" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 <p class="offer-price">455&#x20bd<span>/кг</span></p>
+                <div class="button-offer-wrapper">
+                  <button class="button button-offer">Быстрый просмотр</button>
+                </div>
               </li>
             </ul>
           </section>
@@ -206,18 +218,6 @@
                 <span class="hours-map">(с 10 до 20 ежедневно)</span>
               </p>
               <a class="button button-feedback" href="#">Форма обратной связи</a>
-
-              <!-- Popup with feedback form -->
-              <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                <h2 class="feedback-form-title">Мы обязательно вам ответим!</h2>
-                <label class="feedback-form-item visually-hidden" for="feedback-name">Имя</label>
-                <input class="feedback-form-input" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
-                <label class="feedback-form-item visually-hidden" for="feedback-email">Емейл</label>
-                <input class="feedback-form-input" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
-                <textarea class="feedback-form-input feedback-text" placeholder="Напишите что-нибудь..." rows="7"></textarea>
-                <button class="button button-feedback-submit" type=submit>Отправить</button>
-                <button class="button-feedback-close" type="button">Закрыть</button>
-              </form>
             </section>
           </section>
         </main>
@@ -256,6 +256,19 @@
             <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</p>
           </section>
         </footer>
+        <div class="overlay">
+          <!-- Popup with feedback form -->
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="feedback-form-title">Мы обязательно вам ответим!</h2>
+            <label class="feedback-form-item visually-hidden" for="feedback-name">Имя</label>
+            <input class="feedback-form-input" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
+            <label class="feedback-form-item visually-hidden" for="feedback-email">Емейл</label>
+            <input class="feedback-form-input" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+            <textarea class="feedback-form-input feedback-text" placeholder="Напишите что-нибудь..." rows="7"></textarea>
+            <button class="button button-feedback-submit" type=submit>Отправить</button>
+            <button class="button-feedback-close" type="button">Закрыть</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
